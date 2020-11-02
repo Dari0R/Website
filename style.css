@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sens-serif;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-primary {
+  color: #ffffff;
+}
+
+.text-accentcolor {
+  color: #8661BA
+}
+
+.text-dark {
+  color: #909090;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #717171;
+  padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 3px solid #8661BA;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar h2 a {
+  color: #717171;
+  text-decoration: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #717171;
+  padding: 1rem;
+  font-size: 1.3rem;
+  transition: background-color 0.575s;
+  transition: font-size 1s;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+}
+
+#navbar li a:hover {
+  background-color: #8661BA;
+  color: #fff;
+  font-size: 1.0rem;
+}
+
+#showcase {
+  background-image: url(../imgs/pic1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(78%);
+  height: 91.5vh;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.showcase-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+  font-size: 1.55rem;
+  padding: 1rem 10rem;
+}
+
+.showcase-content .btn:hover {
+  background: #8661BA;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.btn {
+  color: #8661BA;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #8661BA;
+  transition: background-color 0.575s;
+  transition: font-size 0.3s;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#about {
+  padding: 5rem 0;
+  background-color: #161619;
+  color: #555555;
+}
+
+#about h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#about p .lead {
+  margin-bottom: 1rem;
+}
+
+#about .about-content {
+  display: flex;
+  margin-top: 130px;
+  font-size: 1.1rem;
+}
+
+#about .about-text,
+#about .about-image {
+  flex: 1;
+}
+
+#about .about-text {
+  text-align: justify;
+}
+
+#about .about-image img {
+  display: table;
+  margin-left: auto;
+  width: 65%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#contact {
+  background-color: #161619;
+  color: #fff;
+  padding: 12rem 0rem;
+  margin-top: 0px;
+  padding-bottom: 0rem;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+  color: #555555;
+}
+
+#contact .form-box {
+  background-color: #161619;
+  color: #555555;
+  padding: 3.5rem;
+  box-shadow: 2px 2px 5px #000000;
+  border-radius: 5px;
+}
+
+#contact .form-group {
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+#contact .form-group label {
+  color: #555555;
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.1rem;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 0.5px #333 solid;
+  border-radius: 5px;
+}
+
+#contact .form-group textarea {
+  font-family: Arial, sans-serif;
+}
+
+#contact .contact-btn {
+  width: 50%;
+  margin-left: 25%;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  background: #8661BA;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: font-size 0.5s;
+}
+
+#contact .contact-btn:hover {
+  font-size: 1.2rem;
+}
+
+#contact .form-container {
+  position: relative;
+}
+
+#contact .mail-icon {
+  margin-top: 48px;
+  position: absolute;
+  font-size: 4rem;
+  background: #606060;
+  color: white;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border-radius: 20%;
+  top: -7%;
+  left: 45%;
+}
